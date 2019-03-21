@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+body {
+    margin: 0; 
+}
+/* nav bar styles */
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 80%;
+}
+header ul {
+    justify-content: space-around;
+    background-color: white;
+    border-bottom: 4px solid red;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    padding: .5em;
+    margin: 0;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 115%;
+    text-decoration: none;
+    display: block;
+}
+ul li a:hover {
+    text-decoration: underline;
+}
+ul li a:active {
+    color: red;
+}
+#frontbanner {
+    height: 400px;
+    width: 1050px;
+    margin-top: 20px;
+}
+#artcenterimg {
+    height: 200px;
+    width: 200px;
+    float: right;
+    padding: 0 10px;
+}
+#contactimg {
+    height: 200px;
+    width: auto;
+    padding: 0 10px;
+}
+.icon {
+    height: 50px;
+    width: auto;
+}
+
+h1, h2, h3 {
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+main {
+    max-width: 1050px;
+    margin: auto;
+    margin-top: 75px;
+    display: grid;
+    grid-template-rows: auto minmax(60%, 100%) auto;
+    grid-template-columns: 400px minmax(15em, 60em);
+    grid-template-areas:    "pagetop pagetop"
+                            "column1 column2"
+                            "footer footer";
+}
+.pagetop {
+    grid-area: pagetop;
+    margin-top: 1em;
+}
+.column1 {
+    grid-area: column1;
+    margin: 1em;
+}
+.column2 {
+    grid-area: column2;
+    padding-left: 40px;
+    margin: 1em;
+}
+footer {
+    grid-area: footer;
+}
+
+p {
+    font-family: Helvetica;
+}
+.column2 ul {
+    padding: 0;
+}
+.column2 ul li a{
+    text-decoration: underline;
+    text-decoration-color: red;
+    
+}
+ul {
+    padding: 0;
+}
+
+#downloadlist li{
+    margin: 10px 0;
+    white-space: nowrap;
+}
+
+footer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    background-color: white;
+    border-top: 4px solid red;
+    padding: 2em 0;
+    margin: 0 auto;
+    margin-top: 3em;
+    width: 80%;
+}
+
+div.right {
+    text-align: right;
+}
+
+div.left {
+    padding-left: 0px;
+}
+
+footer h3 {
+    margin: 0;
+    font-size: 90%;
+}
