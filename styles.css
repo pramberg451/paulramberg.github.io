@@ -15,7 +15,7 @@ header {
 header ul {
     justify-content: space-around;
     background-color: white;
-    border-bottom: 4px solid red;
+    border-bottom: 3px solid rgb(224, 2, 2);
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -35,18 +35,19 @@ ul li a {
 }
 ul li a:hover {
     text-decoration: underline;
+    text-decoration-color: red;
 }
 ul li a:active {
     color: red;
 }
 #frontbanner {
     height: 400px;
-    width: 1050px;
+    width: 1040px;
     margin-top: 20px;
 }
 #artcenterimg {
-    height: 200px;
-    width: 200px;
+    height: 175px;
+   /* width: 200px;*/
     float: right;
     padding: 0 10px;
 }
@@ -102,7 +103,7 @@ p {
 .column2 ul li a{
     text-decoration: underline;
     text-decoration-color: red;
-    
+    padding: 0.5em 0;
 }
 ul {
     padding: 0;
@@ -118,7 +119,7 @@ footer {
     flex-flow: row;
     justify-content: space-around;
     background-color: white;
-    border-top: 4px solid red;
+    border-top: 3px solid grey;
     padding: 2em 0;
     margin: 0 auto;
     margin-top: 3em;
@@ -136,4 +137,21 @@ div.left {
 footer h3 {
     margin: 0;
     font-size: 90%;
+}
+
+#inside-grid div div {
+    width: 83%;
+    border: 2px solid black;
+    padding: 1em;
+    margin: 1em;
+}
+#inside-grid div div a{
+    font-family: Helvetica, sans-serif;
+    color: rgb(224, 2, 2);
+}
+#inside-grid div div a:active {
+    color: red;
+}
+#inside-grid {
+    display: flex;
 }
