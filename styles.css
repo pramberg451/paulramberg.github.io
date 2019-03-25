@@ -15,7 +15,7 @@ header {
 header ul {
     justify-content: space-around;
     background-color: white;
-    border-bottom: 3px solid rgb(224, 2, 2);
+    border-bottom: 2px solid rgb(224, 2, 2);
     display: flex;
     flex-flow: row;
     align-items: center;
@@ -25,6 +25,7 @@ header ul {
 ul li {
     list-style: none;
 }
+
 ul li a {
     color: black;
     font-family: Helvetica, Arial, sans-serif;
@@ -35,11 +36,13 @@ ul li a {
 }
 ul li a:hover {
     text-decoration: underline;
-    text-decoration-color: red;
 }
+
 ul li a:active {
     color: red;
 }
+
+/* image styles */
 #frontbanner {
     height: 400px;
     width: 1040px;
@@ -52,8 +55,18 @@ ul li a:active {
     padding: 0 10px;
 }
 #contactimg {
-    height: 200px;
-    width: auto;
+    height: auto;
+    width: 95%;
+    padding: 0 10px;
+}
+#aboutimg {
+    height: auto;
+    width: 350px;
+    padding: 20px 0 10px 10px;
+}
+#galleryimg {
+    height: auto;
+    width: 95%;
     padding: 0 10px;
 }
 .icon {
@@ -66,6 +79,7 @@ h1, h2, h3 {
     font-family: Helvetica, Arial, sans-serif;
 }
 
+/* main and grid area styles */
 main {
     max-width: 1050px;
     margin: auto;
@@ -93,7 +107,6 @@ main {
 footer {
     grid-area: footer;
 }
-
 p {
     font-family: Helvetica;
 }
@@ -114,6 +127,7 @@ ul {
     white-space: nowrap;
 }
 
+/* footer styles */
 footer {
     display: flex;
     flex-flow: row;
@@ -125,7 +139,6 @@ footer {
     margin-top: 3em;
     width: 80%;
 }
-
 div.right {
     text-align: right;
 }
@@ -133,12 +146,12 @@ div.right {
 div.left {
     padding-left: 0px;
 }
-
 footer h3 {
     margin: 0;
     font-size: 90%;
 }
 
+/* secondary grid structure */
 #inside-grid div div {
     width: 83%;
     border: 2px solid black;
@@ -154,4 +167,26 @@ footer h3 {
 }
 #inside-grid {
     display: flex;
+}
+
+/* for dropdown menus */
+.dropdown:hover {
+    background-color: rgb(233, 233, 233);
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin: 0 0 0 -10px;
+}
+.dropdown-content a {
+    padding: .5em;
+}
+.dropdown-content a:hover {
+    background-color: rgb(233, 233, 233);
 }
