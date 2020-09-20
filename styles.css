@@ -1,13 +1,177 @@
 @charset "UTF-8";
 
-body {
-    background-color: #12503c;
+/* Universal Styles */
+html{
+  background-color: #ffffff;
 }
 
-p {
-    color: white;
-    font-size: 50px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    margin-top: 3em;   
+/* Link Styles */
+li a {
+  font-family: 'Roboto Slab', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: none;
+  color: black;
+}
+li a:visited {
+  color: black;
+}
+li a:hover {
+  text-decoration: underline;
+}
+li a:active {
+  color: #12503c;
+}
+li a {
+  display: block;
+}
+
+/* Grid Structure */
+#container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 11em auto;
+  grid-template-columns: 11em 1em minmax(20em, 60em);
+  grid-template-areas: "name name name"
+                       "navigation space main";
+}
+header {
+  grid-area: name;
+}
+#navigation {
+  grid-area: navigation;
+}
+main {
+  grid-area: main;
+}
+
+/* Header Styles */
+#name {
+  color: #12503c;
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  text-decoration: underline #9E201A;
+  text-underline-offset: 1em;
+  font-size: 3.5em;
+  text-align: center;
+  margin-bottom: 0px;
+  position: relative;
+  z-index: -1;
+}
+#role {
+  margin-top: 5px;
+  position: relative;
+  z-index: -1;
+}
+
+/* Load In Animations and styles */
+@keyframes loadIn {
+  100% {
+    background-position: top left;
+  }
+}
+@keyframes bringToFront {
+  100% {
+    z-index: 1;
+  }
+}
+
+div.swiper {
+  background-image:linear-gradient(to bottom right, transparent 50%,white 50%);
+  background-size: 200% 200%;
+  background-position:bottom right;
+  transition: 1s;
+  animation: loadIn 2s cubic-bezier(.74, .06, .4, .92) forwards;
+}
+#heading {
+  max-width: 50%;
+  min-width: 500px;
+  margin: auto;
+}
+#content, #title {
+  position: relative;
+  z-index: -1;
+  animation: bringToFront forwards;
+  animation-delay: 2s;
+}
+
+/* Navigation styles */
+#navigation {
+  padding: 1em;
+  padding-top: 3em;
+}
+#navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+.swiper#navigation ul {
+  z-index: -1;
+  animation: bringToFront forwards;
+  animation-delay: 2s;
+}
+#navigation ul li {
+  font-family: 'Roboto Slab', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.1em;
+  text-align: right;
+}
+
+#navigation .project-list {
+  border-right: 2px solid #12503c;
+  padding-right: 10px;
+}
+.project-list li a{
+  font-size: 0.8em;
+}
+
+/* Other Styles */
+main {
+  background-color: transparent;
+}
+h2 {
+  font-family: 'Roboto Slab', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  border-bottom: 2px solid #12503c;
+}
+h3 {
+  font-family: 'Roboto Slab', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: left;
+}
+#role {
+  text-align: center;
+}
+
+/* image styles */
+img {
+  display: block;
+  margin: auto;
+  padding: 1em;
+}
+figcaption {
+  caption-side: top;
+  text-align: center;
+  font-size: 85%;
+  padding-top: 1em;
+  border-top: 2px solid #12503c;
+}
+
+/* button styles */
+button {
+  border: 2px solid #12503c;
+  border-radius: 10px;
+  background-color: white;
+  padding: .5em .5em .5em 0.5em;
+  margin: .5em 0;
+  width: 80%;
+  transition: 0.3s;
+}
+button:hover {
+  background-color: #9E201A;
+  border: 2px solid #9E201A;
+}
+button:hover > a {
+  color: white;
+}
+button a {
+  font-size: 1.1em;
 }

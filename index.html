@@ -4,13 +4,55 @@
 
 <head>
 <meta charset="UTF-8">
-<title>Paul Ramberg</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
+<title>Paul Ramberg - Home</title>
+<style>@import url(styles.css);</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');</style> 
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');</style>
 </head>
 
 <body>
 
-<p>In Progress. . .</p>
+<div id="container">
+  <header>
+    <div class="swiper" id="heading">
+      <h1 id="name">Paul Ramberg</h1>
+      <h3 id="role">Student : Developer : Designer</h3>
+    </div>
+  </header>
+
+  <div class="swiper" id="navigation">
+    <ul>
+      <li><a href="#">- Home -</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="design.html">Design Work</a></li>
+      <li id="projects-header">Projects</li>
+      <ul class="project-list">
+        <li><a href="gce.html">Card Exporter</a></li>
+        <li><a href="lexical.html">Lexical Things</a></li>
+        <li><a href="autochef.html">AutoChef</a></li>
+        <li><a href="website.html">paulramberg.com</a></li>
+      </ul>
+    </ul>
+    <ul style="padding-top:1.5em;">
+      <li><button><a href="assets/resume.pdf">Résumé</a></button></li>
+      <li><button><a href="https://github.com/pramberg451">Github</a></button></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="swiper">
+      <h2 id="title">Welcome!</h2>
+      <div id="content">
+        <p>I'm Paul Ramberg a computer science and design student. This website serves both as a personal project 
+          journal and as a portfolio. Feel free to take a look at some of the projects I have done, big and small!
+        </p>
+        <img src="assets/canyon.png" alt="cover-image" width="700">
+      </div>
+    </div>
+  </main>
+
+</div>
 
 </body>
+
 </html>
