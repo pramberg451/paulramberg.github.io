@@ -6,6 +6,15 @@ html{
 }
 
 /* Link Styles */
+a {
+  color: #12503c;
+}
+a:visited {
+  color: #12503c;
+}
+a:active {
+  color: grey;
+}
 li a {
   font-family: 'Roboto Slab', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   text-decoration: none;
@@ -174,4 +183,9 @@ button:hover > a {
 }
 button a {
   font-size: 1.1em;
+}
+
+p {
+  font-family: 'Lora', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 15px;
 }
