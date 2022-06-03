@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Paul Ramberg - GuessWord</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<style>@import url(styles.css);</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');</style> 
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');</style>
+<style>@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');</style>
+</head>
+
+<body>
+
+<div id="container">
+  <header>
+    <a href="index.html" style="text-decoration: none;">
+      <div id="heading">
+        <h1 id="name">Paul Ramberg</h1>
+        <h3 id="role" style="color: rgb(90, 90, 90);">Software Engineer</h3>
+      </div>
+    </a>
+  </header>
+
+  <div id="navigation">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="artwork.html">Artwork</a></li>
+      <li id="projects-header">Projects</li>
+      <ul class="project-list">
+        <li><a href="guessword.html">- GuessWord -</a></li>
+        <li><a href="gce.html">Card Exporter</a></li>
+        <li><a href="lexical.html">Lexical Things</a></li>
+        <li><a href="autochef.html">AutoChef</a></li>
+        <li><a href="website.html">pramberg.com</a></li>
+      </ul>
+    </ul>
+    <ul style="padding-top:1.5em;">
+      <li><button><a href="assets/resume.pdf">Résumé</a></button></li>
+      <li><button><a href="https://github.com/pramberg451">Github</a></button></li>
+    </ul>
+  </div>
+
+  <main>
+    <div class="swiper">
+      <h2 id="title">GuessWord</h2>
+      <div id="content">
+        <p><a href="https://riddle-guessword.herokuapp.com/">Play GuessWord</a> (because of the service it's hosted on, the site may take a minute to load)</p> 
+        <p><a href="https://github.com/pramberg451/guessword">Source Code</a></p>
+        <p>GuessWord is my take on the recent popular trend surrounding online words games. Unlike it's inspiration, Wordle,
+          words are guessed based on definition not spelling. The game uses natural language processing techniques in order to
+          give the user hints as to what word they are trying guess. Online APIs such as <a href="https://www.datamuse.com/api/">Datamuse</a>
+          and <a href="http://ngrams.ucd.ie/therex3/">Thesaurus Rex</a> are used to give adjectives or categories for the word, while a 
+          neural network model, trained using <a href="https://code.google.com/archive/p/word2vec/">Word2Vec</a>, is used to give users an idea of
+          how close in defintion their guesses have been so far.
+        </p>
+        <p>The application was built for the web using Python, HTML, CSS and Bootstrap. It features an SQL database to hold both user
+          information, so players can track their game statistics, and the over 3 million trained word embeddings required to compare defintions.
+        </p>
+        <p>The project went through many different stages of research and development. I needed to learn how to fully construct a web application, host it online and manage user data. 
+          GuessWord also took a huge amount of research into natural language processing to get both the clues and the word comparisons where I wanted them. I went through dozens 
+          of iterations, APIs, training model implementations and word lists to get the finished product. The project was a massive learning experiance for how to construct
+          web applications and just how complex natural language processing can be.
+        </p>
+        <img src="assets/guessword.png" alt="guessword-example" width="500">
+        
+      </div>
+    </div>
+  </main>
+
+</div>
+
+</body>
+
+</html>

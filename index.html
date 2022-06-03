@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Paul Ramberg - Home</title>
+<link rel="icon" type="image/png" href="assets/favicon.png">
 <style>@import url(styles.css);</style>
 <style>@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap');</style> 
 <style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');</style>
@@ -15,23 +16,25 @@
 
 <div id="container">
   <header>
-    <div class="swiper" id="heading">
-      <h1 id="name">Paul Ramberg</h1>
-      <h3 id="role">Student : Developer : Designer</h3>
-    </div>
+    <a href="index.html" style="text-decoration: none;">
+      <div class="swiper" id="heading">
+        <h1 id="name">Paul Ramberg</h1>
+        <h3 id="role" style="color: rgb(90, 90, 90);">Software Engineer</h3>
+      </div>
+    </a>
   </header>
 
   <div class="swiper" id="navigation">
     <ul>
-      <li><a href="#">- Home -</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="design.html">Design Work</a></li>
+      <li>- Home -</li>
+      <li><a href="artwork.html">Artwork</a></li>
       <li id="projects-header">Projects</li>
       <ul class="project-list">
+        <li><a href="guessword.html">GuessWord</a></li>
         <li><a href="gce.html">Card Exporter</a></li>
         <li><a href="lexical.html">Lexical Things</a></li>
         <li><a href="autochef.html">AutoChef</a></li>
-        <li><a href="website.html">paulramberg.com</a></li>
+        <li><a href="website.html">pramberg.com</a></li>
       </ul>
     </ul>
     <ul style="padding-top:1.5em;">
@@ -43,11 +46,22 @@
   <main>
     <div class="swiper">
       <h2 id="title">Welcome!</h2>
-      <div id="content">
-        <p>I'm Paul Ramberg a computer science and design student. This website serves both as a personal project 
-          journal and as a portfolio. Feel free to take a look at some of the projects I have done, big and small!
-        </p>
-        <img src="assets/canyon.png" alt="cover-image" width="700">
+      <div id="content" style="height: 1000px;">
+        <img src="assets/portrait.png" alt="porait-of-me" width="300" style="float: right; border-radius: 50%; margin-top: -1em;">
+        <p>Hello! I'm Paul Ramberg, a software developer. This website serves as a personal 
+          journal for projects big and small and as a portfolio.</p>
+
+        <p>I studied in my hometown of Kirksville, Missouri at Truman State University with a minor in design. 
+          I studied both art and computer science because I love combining both fields and 
+          because a lot of my interests intersect with both areas. Over the course of my
+          time in college, I learned everything from the details of design work to the design
+          work of software.</p>
+      
+        <p>Outside of school I'm interested in many things such as video games, strategy card games,
+           swimming and fantasy novels. Many of the projects I develop involve my hobbies and I
+          often write different programs on the side to develop my skills and explore my interests.</p>
+
+        <p>Feel free to take a look around!</p>
       </div>
     </div>
   </main>
